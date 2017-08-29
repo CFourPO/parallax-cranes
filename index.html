@@ -14,48 +14,53 @@
 <body>
     <div class="wrapper">
         <div id="container" class="container">
-            <!-- SCENE 1 -->
-            <div id="scene" class="scene" data-friction-x="0.05" data-friction-y="0.12" data-calibrate-x="true" data-calibrate-y="true">
-                <!-- SPIKE SHADOW 1 -->
+            <!-- SPIKE 1 -->
+            <div id="scene" class="scene" data-friction=".2" data-calibrate-x="true" data-calibrate-y="true">
                 <div class="layer" data-depth-x="0.23" data-depth-y="0.23" style="width: 450px"><img src="./resources/img/wide/spike_shadow_0.1.svg" /></div>
-                <!-- BIRD SMALL SHADOW  -->
-                <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_sm_shadow_0.1.svg" /></div>
-                <!-- SPIKE SHADOW 2 -->
-                <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img style="width: 70%;" src="./resources/img/wide/spike_shadow_0.1.svg" /></div>
-                <!-- BIRD LARGE SHADOW -->
-                <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_lg_shadow_0.1.svg" /></div>
-                
-
-                <!-- SPIKE 1 -->
-                <div class="layer" data-depth-x="0.35" data-depth-y="0.35" style="width: 450px;"><img src="./resources/img/wide/spike_0.1.svg" /></div>
-                <!-- BIRD SMALL  -->
-                <div class="layer" data-depth-x="0.40" data-depth-y="0.4" ><img src="./resources/img/wide/bird_sm_0.1.svg" /></div>
-                <!-- SPIKE 2-->
-                <div class="layer" data-depth-x="0.70" data-depth-y="0.50"><img style="width: 70%;" src="./resources/img/wide/spike_0.1.svg" /></div>
-                <!-- BIRD LARGE -->
-                <div class="layer" data-depth-x="0.90" data-depth-y="0.60"><img src="./resources/img/wide/bird_lg_0.1.svg" /></div>
             </div>
-            <!-- SCENE 2 -->
-            <div id="scene2" class="scene2" style="" data-friction-x="0.15" data-friction-y="0.05" data-calibrate-x="true" data-calibrate-y="true">
-                <!-- SPIKE SHADOW 1 -->
-                <div class="layer" data-depth-x="0.23" data-depth-y="0.23" style="width: 900px"><img src="./resources/img/wide/spike_shadow_0.1.svg" /></div>
-                <!-- BIRD SMALL SHADOW  -->
+             <div id="scene" class="scene" data-friction=".2" data-calibrate-x="true" data-calibrate-y="true">
+                <div class="layer" data-depth-x="0.35" data-depth-y="0.35" style="width: 450px;"><img src="./resources/img/wide/spike_0.1.svg" /></div>
+            </div>
+            <!-- BIRD SMALL  -->
+            <div class="scene" data-friction=".025" data-scalar-x="25">
                 <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_sm_shadow_0.1.svg" /></div>
-                <!-- SPIKE SHADOW 2 -->
-                <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img style="width: 40%;" src="./resources/img/wide/spike_shadow_0.1.svg" /></div>
-                <!-- BIRD LARGE SHADOW -->
+            </div>
+            <!-- SPIKE SHADOW 2 -->
+            <div class="scene" data-friction-x=".02" data-friction-y=".02" data-scalar-x="30" data-scalar-y="40">
+                <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img style="width: 70%;" src="./resources/img/wide/spike_shadow_0.1.svg" /></div>
+            </div>
+            <div class="scene" data-friction-x=".02" data-friction-y=".03" data-scalar-x="30" data-scalar-y="40">
+                <div class="layer" data-depth-x="0.70" data-depth-y="0.50"><img style="width: 70%;" src="./resources/img/wide/spike_0.1.svg" /></div>
+            </div>
+            <!-- BIRD LARGE SHADOW -->
+            <div class="scene" data-friction-x=".025" data-friction-y=".05" data-scalar-y="20">
                 <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_lg_shadow_0.1.svg" /></div>
-                
-                <!-- SPIKE 1 -->
-                <div class="layer" data-depth-x="0.35" data-depth-y="0.35" style="width: 900px;"><img src="./resources/img/wide/spike_0.1.svg" /></div>
-                <!-- BIRD SMALL  -->
-                <div class="layer" data-depth-x="0.40" data-depth-y="0.40"><img style="right: -400px;" src="./resources/img/wide/bird_sm_0.1.svg" /></div>
-                <!-- SPIKE 2-->
-                <div class="layer" data-depth-x="0.70" data-depth-y="0.50"><img style="width: 40%;" src="./resources/img/wide/spike_0.1.svg" /></div>
-                <!-- BIRD LARGE -->
+            </div>
+            <div class="scene" data-friction=".025" data-scalar-x="25">
+                <div class="layer" data-depth-x="0.40" data-depth-y="0.4"><img src="./resources/img/wide/bird_sm_0.1.svg" /></div>
+            </div>
+            <div class="scene" data-friction-x=".025" data-friction-y=".05" data-scalar-y="20">
                 <div class="layer" data-depth-x="0.90" data-depth-y="0.60"><img src="./resources/img/wide/bird_lg_0.1.svg" /></div>
             </div>
         </div>
+        <!-- SCENE 2 -->
+        <!-- <div id="scene2" class="scene2" style="" data-friction-x="0.15" data-friction-y="0.05" data-calibrate-x="true" data-calibrate-y="true"> -->
+        <!-- SPIKE SHADOW 1 -->
+        <!-- <div class="layer" data-depth-x="0.23" data-depth-y="0.23" style="width: 900px"><img src="./resources/img/wide/spike_shadow_0.1.svg" /></div> -->
+        <!-- BIRD SMALL SHADOW  -->
+        <!-- <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_sm_shadow_0.1.svg" /></div> -->
+        <!-- SPIKE SHADOW 2 -->
+        <!-- <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img style="width: 40%;" src="./resources/img/wide/spike_shadow_0.1.svg" /></div> -->
+        <!-- BIRD LARGE SHADOW -->
+        <!-- <div class="layer" data-depth-x="0.23" data-depth-y="0.23"><img src="./resources/img/wide/bird_lg_shadow_0.1.svg" /></div> -->
+        <!-- SPIKE 1 -->
+        <!-- <div class="layer" data-depth-x="0.35" data-depth-y="0.35" style="width: 900px;"><img src="./resources/img/wide/spike_0.1.svg" /></div> -->
+        <!-- BIRD SMALL  -->
+        <!-- <div class="layer" data-depth-x="0.40" data-depth-y="0.40"><img style="right: -400px;" src="./resources/img/wide/bird_sm_0.1.svg" /></div> -->
+        <!-- SPIKE 2-->
+        <!-- <div class="layer" data-depth-x="0.70" data-depth-y="0.50"><img style="width: 40%;" src="./resources/img/wide/spike_0.1.svg" /></div> -->
+        <!-- BIRD LARGE -->
+        <!-- <div class="layer" data-depth-x="0.90" data-depth-y="0.60"><img src="./resources/img/wide/bird_lg_0.1.svg" /></div> -->
     </div>
     <div class="wrapper">
         <div class="container">
@@ -63,13 +68,19 @@
         </div>
     </div>
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="./vendors/parallax/parallax.js"></script>
     <script>
+    var arr = [];
+    $('.scene').each((i, el) => {
+        arr.push(new Parallax(el));
+    });
+
     // Pretty simple huh?
-    var scene = document.getElementById('scene');
-    var scene2 = document.getElementById('scene2');
-    var parallax = new Parallax(scene);
-    var parallax2 = new Parallax(scene2);
+    // var scene = document.getElementById('scene');
+    // var scene2 = document.getElementById('scene2');
+    // var parallax = new Parallax(scene);
+    // var parallax2 = new Parallax(scene2);
     </script>
 </body>
 
