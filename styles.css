@@ -64,7 +64,10 @@ input[type=checkbox]:checked + label:before {
 .scene {
   margin: 0;
   padding: 0; 
-position: absolute; }
+  position: absolute;
+  width: 70vw;
+  height: 100vh;
+  top: -20px; }
 
 .scene2 {
   margin: 0;
