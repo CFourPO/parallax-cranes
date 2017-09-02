@@ -1,0 +1,28 @@
+{
+  "name": "parallax-cranes",
+  "version": "1.0.0",
+  "description": "Personal website using Parallax, and some personal creations",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CFourPO/parallax-cranes.git"
+  },
+  "keywords": [
+    "es6",
+    "parallax"
+  ],
+  "author": "Chris Pomerville",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CFourPO/parallax-cranes/issues"
+  },
+  "homepage": "https://github.com/CFourPO/parallax-cranes#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
