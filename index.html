@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="main">
         <div id="container" class="container">
             <!-- BIRD SMALL  -->
             <div class="scene shadow" data-myname="bird-sm" data-friction=".025" >
@@ -54,54 +54,60 @@
     </div>
     <div class="wrapper">
         <div class="container">
-            Som Content
+            Some Content
         </div>
     </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
     <script src="./vendors/parallax/parallax.js"></script>
-    <script>
+    
+    <script src="./js/swipedetect.js"></script>
+    <script src="./js/index.js"></script>
 
 
 
-$(document).ready(() => {
-    var getName = function(name) {
-        console.log("Im here", name);
-        var scalarMap = {
-                "bird-lg":  [20, 30],
-                "spike":    [15, 25],
-                "bird-sm":  [10, 10]
-            };
+// $(document).ready(() => {
+//     var getName = function(name) {
+//         console.log("Im here", name);
+//         var scalarMap = {
+//                 "bird-lg":  [20, 30],
+//                 "spike":    [15, 25],
+//                 "bird-sm":  [10, 10]
+//             };
 
-        return scalarMap[name];
-    };  
+//         return scalarMap[name];
+//     };  
 
-$('.scene').each((i, el) => {
-        console.log(i, el);
-        var isShadow = $(el).hasClass("shadow");
-        var name = $(el).data("myname");
-        console.log(name);
+// $('.scene').each((i, el) => {
+//         console.log(i, el);
+//         var isShadow = $(el).hasClass("shadow");
+//         var name = $(el).data("myname");
+//         console.log(name);
 
-        let myScalars = getName(name);
+//         let myScalars = getName(name);
 
 
-      var parallax = new Parallax(el);
+//       var parallax = new Parallax(el);
 
-        if (isShadow) {
-            for (var ind = 0; ind < myScalars.length; ind++)
-            // myScalars.map(i => i / 2);
-            myScalars[ind] = myScalars[ind] / 2;
+//         if (isShadow) {
+//             for (var ind = 0; ind < myScalars.length; ind++)
+//             // myScalars.map(i => i / 2);
+//             myScalars[ind] = myScalars[ind] / 2;
 
-        } else {
-            parallax.invert(false, false);
-        }
+//         } else {
+//             parallax.invert(false, false);
+//         }
 
-  parallax.scalar(myScalars[0], myScalars[1]);
-        console.log(myScalars);
+//   parallax.scalar(myScalars[0], myScalars[1]);
+//         console.log(myScalars);
         
-    });
-});
+//     });
+// });
     </script>
 </body>
 
