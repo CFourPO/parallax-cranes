@@ -1,5 +1,5 @@
 // credit: http://www.javascriptkit.com/javatutors/touchevents2.shtml
-   
+
 
 
 $(document).ready(() => {
@@ -29,9 +29,7 @@ $(document).ready(() => {
 
         if (isShadow) {
             for (var ind = 0; ind < myScalars.length; ind++)
-            // myScalars.map(i => i / 2);
                 myScalars[ind] = myScalars[ind] / 2;
-
         } else {
             parallax.invert(false, false);
         }
