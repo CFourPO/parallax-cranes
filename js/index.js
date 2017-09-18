@@ -8,6 +8,7 @@ $(document).ready(() => {
     var getName = function(name) {
         console.log("Im here", name);
         var scalarMap = {
+            "animated-cloud": [10, 10],
             "bird-lg": [20, 30],
             "spike": [15, 25],
             "bird-sm": [10, 10]
