@@ -55,6 +55,7 @@
             case "left":
                 $(el).animate({backgroundColor: 'black'}, 200);
                 $('.shadow').animate({opacity: '-=1'}, 200);
+                $('.layer img').addClass('swingSteady');
                 break;
             case "right":
                 $(el).animate({backgroundColor: 'white'}, 200);

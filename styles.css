@@ -228,7 +228,15 @@ iPad 3
   }
 }*/
 
+.swingSteady {
+  animation: swingSteady 2s linear 3;
+}
 
-
+@keyframes swingSteady {
+  0% { transform: rotate3d(0, 1, 0, 0deg); }
+  33% { transform: rotate3d(0, 1, 0, 360deg); }
+  66% { transform: rotate3d(0, 1, 0, 720deg); }
+  100% { transform: rotate3d(0, 1, 0, 1080deg); }
+}
 
 -
