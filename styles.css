@@ -41,18 +41,6 @@ img {
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
-=======
-/*.menu-container {
-  left: 50%;
-  padding: 1em;
-  width: 50%;
-  text-align:center;
-  margin: auto;
-  margin-top: 15em;
-}*/
-
->>>>>>> 47bff349ab0f4745e49c5c7307b718c9b8d61f4b
 .menu-container h1 {
   font-size: 1.5em;
 }
@@ -61,7 +49,6 @@ img {
  list-style: none;
  margin: 0;
  padding: 0;
- /*text-align: right;*/
 }
 
 .menu-container ul li {
@@ -214,16 +201,4 @@ iPad 3
 @media only screen and (min-device-width:320px) and (max-device-width:480px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {}
 
 /* iPhone 5 ----------- */
-<<<<<<< HEAD
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation:landscape) and (-webkit-device-pixel-ratio:2) {}
-=======
-@media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation:landscape) and (-webkit-device-pixel-ratio:2) {
-
-  /* Styles */
-}
-
-
-
-
--
->>>>>>> 47bff349ab0f4745e49c5c7307b718c9b8d61f4b
