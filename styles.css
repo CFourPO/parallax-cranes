@@ -1,7 +1,7 @@
 body {
   background: #EEE;
   color: #555;
-  font-family: monospace;
+  font-family: 'Oswald';
   font-size: 18px;
   overflow: hidden;
   margin: 0;
@@ -74,7 +74,7 @@ img {
 }
 
 .animated-cloud img {
-  animation: animatedCloud 80s linear infinite;
+  animation: animatedCloud 40s linear infinite;
   max-width: 500px;
   position: absolute;
   left: -500px;
@@ -84,7 +84,7 @@ img {
 
 .animated-cloud-2 img {
   transform: perspective(500px) translate3d(200px,50px,100px);
-  animation: animatedClouds 90s linear infinite reverse;
+  animation: animatedClouds 50s linear infinite reverse;
   min-width: 600px;
   position: absolute;
 }
